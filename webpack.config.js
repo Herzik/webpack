@@ -19,7 +19,7 @@ const jsLoaders = () => {
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: { main: ['@babel/polyfill', './index.js'] },
+  entry: { main: ['./index.html', '@babel/polyfill', './index.js'] },
   output: {
     filename: isProd ? 'bundle.[hash].js' : 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
